@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "腾讯课堂",
+  "usingComponents": {
+    "select": "../../componet/select/select"
+  }
+}

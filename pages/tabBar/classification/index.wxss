@@ -1,0 +1,91 @@
+/* pages/tabBar/classification/index.wxss */
+.search{
+  background-color:#efefef;
+  border-radius:2px;
+  margin-right:10px;
+  margin-left:10px;
+  margin-top: 5px;
+  position:relative;  /*设置搜索框和背景框体的相对定位 1*/
+  opacity: 0.5;   /*设置透明度 value在0.0到1.0之间*/
+}
+
+.topbar{
+  background-color: #4671ff;
+  height: 110px;
+  width: 100%;
+  position: fixed;  /* 2 */
+  z-index: 98;
+}
+
+/* topbar设计 */
+
+image{
+  width: 20px;
+  height: 20px;
+}
+
+.navigator{
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  margin: 0 auto;
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin-left: 2px;
+}
+
+.topbar_content_underline{
+  height: 1px;
+  width: 40px;
+  background-color: #fff;
+  visibility:hidden;
+}
+
+.topbar_content{
+  width: 300px;
+  margin:0 auto;
+  margin-top: 20px;
+}
+
+.topbar_content_value{
+  margin: 3px auto;
+}
+
+/* 内容设计 */
+.index_contents_son_neirong{
+  /*display:flex 是一种布局方式。它即可以应用于容器中，也可以应用于行内元素。是W3C提出的一种新的方案，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持。
+  Flex是Flexible Box的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性。设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。
+  1.flex-direction:row; 沿水平主轴让元素从左向右排列
+  2.flex-direction:column; 让元素沿垂直主轴从上到下垂直排列
+  3.flex-direction:row-reverse;沿水平主轴让元素从右向左排列*/
+  display: flex;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #efefef;
+}
+
+.logo_img{
+  width: 100px;
+  margin:0 auto;
+}
+
+.neirong_content{
+  flex-grow: 1;
+  font-size: 12px;
+}
+
+.logo_img_text{
+  font-size: 10px;
+  color: #666;
+}
+
+.neirong_content text{
+  color: #aaa;
+}
+
+/*将除 topbar 之外的全部内容隐藏*/
+.index_contents{
+  display: none;
+}

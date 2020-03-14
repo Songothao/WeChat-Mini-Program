@@ -1,0 +1,19 @@
+.inner_content{
+  display: flex;
+  height: 80px;
+  width: 100%;
+}
+
+.image_content{
+  background-color: #006;
+  flex-grow:3; 
+}
+
+.text_content{
+  background-color: #00a;
+  flex-grow: 3;
+}
+.image_content_two{
+  background-color: #00f;
+  flex-grow: 1;
+}

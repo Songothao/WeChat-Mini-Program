@@ -1,0 +1,7 @@
+<view class="inner">
+  <view class="inner_content" flex-drection="row">
+    <view class="image_content"></view>
+    <view class="text_content"></view>
+    <view class="image_content_two"></view>
+  </view>
+</view>

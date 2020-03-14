@@ -1,0 +1,12 @@
+<!-- 组件 -->
+<view class="select_componet">
+  <view class="select_componet_content">
+    <view class="select_componet_content_son">
+        <input type="text" auto-focus placeholder="搜索老师、机构、课程"></input>
+        <view class="cancel_botton">取消</view>
+    </view>    
+  </view>
+</view>
+
+
+<!-- 完毕 -->

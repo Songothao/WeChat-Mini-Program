@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/tabBar/home/index",
+    "pages/tabBar/classification/index",
+    "pages/tabBar/classSchedule/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/home/index",
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabBar/classification/index",
+        "iconPath": "pages/images/classification.png",
+        "selectedIconPath": "pages/images/classification.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/tabBar/classSchedule/index",
+        "iconPath": "pages/images/classSchedule.png",
+        "selectedIconPath": "pages/images/classSchedule.png",
+        "text": "课程表"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

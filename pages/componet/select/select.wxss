@@ -1,0 +1,41 @@
+/*---------------------select组件样式----------------------*/
+.select_componet{
+  /* position:fixed; */
+  /* z-index: 101; */
+  width: 100%;
+  height: 1500px;
+  background-color: rgba(3, 0, 0, 0.4);
+}
+
+.select_componet_content{
+  background-color: #fff;
+  width: 100%;
+  height: 106px;
+  padding-top:4px;
+}
+
+.select_componet_content_son{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.select_componet_content_son input{
+  width: 85%;
+  font-size: 10px;
+  background-color: #efefef;
+  border-radius: 1px;
+  float: left;
+}
+
+.cancel_botton{
+  font-size: 13px;
+  float: right;
+  padding-top:2px; 
+}
+
+
+
+
+
+
+/*-------------------------------------------------------*/

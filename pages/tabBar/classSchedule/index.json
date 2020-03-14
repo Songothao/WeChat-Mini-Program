@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "course": "../../componet/course/course"
+  },
+  "navigationBarTitleText":"腾讯课堂"
+}

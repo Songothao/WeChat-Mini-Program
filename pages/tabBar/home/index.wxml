@@ -1,0 +1,104 @@
+<view class="index">
+  <view class="index-hd">
+    <image class="logo" src="../../images/logo1.png" style="width:30px; height:30px;margin-left:10px;float:left;"></image>
+    <input class="select_input" type="text" placeholder="搜索老师、机构、课程" bindtap="search_click" ></input>
+  </view>
+  <!-- 解决position:fixed遮挡页面内容 -->
+  <view style="padding-top:8px"></view>
+  <view class="index_content">
+    <view class="carousel">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"  duration="{{duration}}">
+        <swiper-item>
+          <image src="../../images/demo_text_1.jpg" style="width:100%"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="../../images/demo_text_2.jpg" style="width:100%"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="../../images/demo_text_3.jpg" style="width:100%"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="content_1" style="color:#ccc;font-size:10px;text-align:center;">
+      <view class="content_text_biaoti">/ 高 中 免 费 体 验 课 /</view>
+      <view flex-direction='column'>
+        <view class="hight" flex-direction = 'row'>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+            <text></text>
+          </view>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+        </view> 
+        <view class="hight" flex-direction = 'row'>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+        </view>
+        <view class="hight" flex-direction = 'row'> 
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+        </view>
+        <view class="content_text_biaoti">/ 初 高 直 播 免 费 学 /</view>
+        <view class="hight" flex-direction = 'row'>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+        </view>
+        <view class="hight" flex-direction = 'row'>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+        </view>
+        <view class="hight" flex-direction = 'row'>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+        </view>
+        <view class="content_text_biaoti">/ 小 学 直 播 好 课 免 费 学 /</view>
+        <view class="hight" flex-direction = 'row'>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+        </view>
+              <view class="hight" flex-direction = 'row'>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+        </view>
+        <view class="hight" flex-direction = 'row'>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+          <view class="hight_content">
+            <view class="hight_content_video"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view></view>
+  </view>
+</view>

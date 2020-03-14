@@ -1,0 +1,642 @@
+<!--pages/tabBar/classification/index.wxml-->
+<view class="index">
+  <view class="topbar">
+    <view class="search">
+      <input type="text" placeholder="搜索老师、机构、课程" style="text-align:center;font-size:10px;"></input>
+    </view>
+    <view class="topbar_design" >
+      <view class="topbar_content" flex-direction="row">
+      <!-- bindtap 设计 点击事件 -->
+        <view class="navigator" bindtap="switch1">
+          <image src="../../images/IT.png"></image>
+          <view class="topbar_content_value">IT</view>
+          <view class="topbar_content_underline" style="visibility:{{x1}}"></view>
+        </view>
+        <view class="navigator"  bindtap="switch2">
+          <image src="../../images/design.png"></image>
+          <view  class="topbar_content_value">设计</view>
+          <view class="topbar_content_underline" style="visibility:{{x2}}"></view>
+        </view>
+        <view class="navigator"  bindtap="switch3">
+          <image src="../../images/e_commerce.png"></image>
+          <view  class="topbar_content_value">电商</view>
+          <view class="topbar_content_underline" style="visibility:{{x3}}"></view>
+        </view>
+        <view class="navigator"  bindtap="switch4">
+          <image src="../../images/occupation.png"></image>
+          <view  class="topbar_content_value">职业</view>
+          <view class="topbar_content_underline" style="visibility:{{x4}}"></view>
+        </view>
+        <view class="navigator"  bindtap="switch5">
+          <image src="../../images/education.png"></image>
+          <view  class="topbar_content_value">升学</view>
+          <view class="topbar_content_underline" style="visibility:{{x5}}"></view>
+        </view>
+        <view class="navigator"  bindtap="switch6">
+          <image src="../../images/habbit.png"></image>
+          <view  class="topbar_content_value">兴趣</view>
+          <view class="topbar_content_underline" style="visibility:{{x6}}"></view>
+        </view>
+        <view class="navigator"  bindtap="switch7">
+          <image src="../../images/language.png"></image>
+          <view  class="topbar_content_value">语言</view>
+          <view class="topbar_content_underline" style="visibility:{{x7}}"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view style="height:110px;width:100%"></view>
+  <!-- IT -->
+  <view class="index_contents" style="display:{{y1}}">
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/internet.png"></image>
+          <view class="logo_img_text">互联网产品</view>
+        </view>
+        <view class="neirong_content">
+          <view>产品策划 <text> | </text> 产品运营</view>
+          <view>游戏策划 <text> | </text> 游戏运营</view>
+          <view>新媒体营销 <text> | </text> 网络营销理论</view>
+          <view>SEO <text> | </text> SEM</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/bianchengyuyan.png"></image>
+          <view class="logo_img_text">编程语言</view>
+        </view>
+        <view class="neirong_content">
+          <view>Java进阶 <text> | </text> Java零基础</view>
+          <view>Python <text> | </text> PHP <text> | </text>  C#/.Net</view>
+          <view>C++ <text> | </text> C <text> | </text> Go语言  <text> | </text> Ruby</view>
+          <view>JavaScript <text> | </text> SQL  <text> | </text> Perl</view>
+          <view>Object-C <text> | </text> Lua  <text> | </text> VB.NET</view>
+          <view>Flash AS3.0 <text> | </text> Swift  <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/qianduan.png"></image>
+          <view class="logo_img_text">前端开发</view>
+        </view>
+        <view class="neirong_content">
+          <view>基础就业课 <text> | </text> 实战进阶课</view>
+          <view>技术专题课</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/moblie.png"></image>
+          <view class="logo_img_text">移动开发</view>
+        </view>
+        <view class="neirong_content">
+          <view>Android <text> | </text> iOS开发</view>
+          <view>微信开发 <text> | </text> 跨平台APP开发</view>
+          <view>其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/wangluo.png"></image>
+          <view class="logo_img_text">网络和运维</view>
+        </view>
+        <view class="neirong_content">
+          <view>Linux运维 <text> | </text> Python自动化运维</view>
+          <view>DevOps <text> | </text> 信息安全 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/game.png"></image>
+          <view class="logo_img_text">游戏开发</view>
+        </view>
+        <view class="neirong_content">
+          <view>Unity3d游戏开发</view>
+          <view>Cocos2d-x游戏开发</view>
+          <view>游戏服务器开发 <text> | </text> Html5游戏</view>
+          <view>UE4 <text> | </text>VR/AR<text> | </text> OpenGL开发</view>
+          <view>egret游戏开发 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/test.png"></image>
+          <view class="logo_img_text">软件测试</view>
+        </view>
+        <view class="neirong_content">
+          <view>敏捷开发 <text> | </text> 软件测试</view>
+          <view>软件研发 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/yunjisuan.png"></image>
+          <view class="logo_img_text">云计算大数据</view>
+        </view>
+        <view class="neirong_content">
+          <view>云计算 <text> | </text>大数据<text> | </text> 人工智能</view>
+          <view>物联网 <text> | </text>区块链<text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/yingjiankaifa.png"></image>
+          <view class="logo_img_text">硬件研发</view>
+        </view>
+        <view class="neirong_content">
+          <view>嵌入式开发 <text> | </text>IC设计<text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/renzhengkaoshi.png"></image>
+          <view class="logo_img_text">认证考试</view>
+        </view>
+        <view class="neirong_content">
+          <view>思科认证 <text> | </text> 华为认证</view>
+          <view>红帽认证 <text> | </text>软考<text> | </text> 腾讯云认证</view>
+          <view>其他</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 设计 -->
+  <view class="index_contents"  style="display:{{y2}}">
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/pingmiansheji.png"></image>
+          <view class="logo_img_text">平面设计</view>
+        </view>
+        <view class="neirong_content">
+          <view>电商美工 <text> | </text> 综合平面</view>
+          <view>摄影后期</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/designsoft.png"></image>
+          <view class="logo_img_text">设计软件</view>
+        </view>
+        <view class="neirong_content">
+          <view>Photoshop <text> | </text> Indesign</view>
+          <view>Axure <text> | </text> CDR <text> | </text>  illustrator</view>
+          <view>Dreamweaver <text> | </text> C <text> | </text> CAD  <text> | </text> UG</view>
+          <view>Solidworks <text> | </text> Sketchup</view>
+          <view>Rhino3D <text> | </text> Pro/E  <text> | </text> ZBrush</view>
+          <view>Cinema 4D <text> | </text> SAI  <text> | </text> Flash</view>
+          <view>3DMAX <text> | </text> MAYA  <text> | </text> VRay</view>
+          <view>AE <text> | </text> Premiere  <text> | </text> Fireworks</view>
+          <view>其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/huanjing.png"></image>
+          <view class="logo_img_text">环境艺术设计</view>
+        </view>
+        <view class="neirong_content">
+          <view>室内设计 <text> | </text> 建筑设计</view>
+          <view>景观设计 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/huihuachuangzuo.png"></image>
+          <view class="logo_img_text">绘画创作</view>
+        </view>
+        <view class="neirong_content">
+          <view>插画 <text> | </text> 漫画绘本 <text> | </text> 国画油画</view>
+          <view>水彩水粉画 <text> | </text> 素描 <text> | </text> 彩铅手绘</view>
+          <view>其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/industry.png"></image>
+          <view class="logo_img_text">工业产品设计</view>
+        </view>
+        <view class="neirong_content">
+          <view>模具设计 <text> | </text> 机械设计</view>
+          <view>产品设计 <text> | </text>包装设计<text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/ui.png"></image>
+          <view class="logo_img_text">UI设计</view>
+        </view>
+        <view class="neirong_content">
+          <view>交互设计 <text> | </text> 游戏UI设计</view>
+          <view>Web UI设计 <text> | </text> APP UI设计</view>
+          <view>腾讯设计学院 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/gamedesign.png"></image>
+          <view class="logo_img_text">游戏美术设计</view>
+        </view>
+        <view class="neirong_content">
+          <view>游戏角色 <text> | </text> 场景概念</view>
+          <view>游戏模型 <text> | </text> 游戏特效</view>
+          <view>游戏美宣 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/moviedesign.png"></image>
+          <view class="logo_img_text">影视设计</view>
+        </view>
+        <view class="neirong_content">
+          <view>动画设计 <text> | </text> 包装与剪辑</view>
+          <view>特效与后期 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/clothingdesign.png"></image>
+          <view class="logo_img_text">服装设计</view>
+        </view>
+        <view class="neirong_content">
+          <view>服装设计 <text> | </text> 服装打版</view>
+          <view>配饰设计 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/other.png"></image>
+          <view class="logo_img_text">其他</view>
+        </view>
+        <view class="neirong_content">
+          <view>其他</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 电商 -->
+  <view class="index_contents" style="display:{{y3}}">
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/dianshang.png"></image>
+          <view class="logo_img_text">电商平台</view>
+        </view>
+        <view class="neirong_content">
+          <view>淘宝营销 <text> | </text> 拼多多营销</view>
+          <view>京东营销</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/kuajingdianshang.png"></image>
+          <view class="logo_img_text">跨境电商</view>
+        </view>
+        <view class="neirong_content">
+          <view>亚马逊 <text> | </text> Shopee(虾皮)</view>
+          <view>速卖通 <text> | </text> 阿里国际 <text> | </text>  独立站</view>
+          <view>其他平台</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/huanjing.png"></image>
+          <view class="logo_img_text">社交电商</view>
+        </view>
+        <view class="neirong_content">
+          <view>直播短视频电商 <text> | </text> 微信电商</view>
+          <view>社群营销</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/other.png"></image>
+          <view class="logo_img_text">其他</view>
+        </view>
+        <view class="neirong_content">
+          <view>其他</view>
+        </view>
+      </view>
+    </view>
+  </view> 
+  <!-- 职业 -->
+  <view class="index_contents"  style="display:{{y4}}">
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/gongkaoqiuzhi.png"></image>
+          <view class="logo_img_text">公考求职</view>
+        </view>
+        <view class="neirong_content">
+          <view>公务员 <text> | </text> 事业单位 <text> | </text>  教师考试</view>
+          <view>经融银行 <text> | </text> 企业招聘/其他招考</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/faxueyuan.png"></image>
+          <view class="logo_img_text">法学院</view>
+        </view>
+        <view class="neirong_content">
+          <view>法律硕士 <text> | </text> 法律职业资格</view>
+          <view>法律实务 <text> | </text> 趣味学法 </view>
+          <view>警法考试</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/jinrong.png"></image>
+          <view class="logo_img_text">财会金融</view>
+        </view>
+        <view class="neirong_content">
+          <view>会计职称 <text> | </text> 注册会计师</view>
+          <view>国际证书 <text> | </text> 金融类从业</view>
+          <view>会计实务操作 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/hospital.png"></image>
+          <view class="logo_img_text">医疗卫生</view>
+        </view>
+        <view class="neirong_content">
+          <view>执业药师 <text> | </text> 执业医师</view>
+          <view>职业护士 <text> | </text> 健康管理师</view>
+          <view>中医技能 <text> | </text> 卫生资格</view>
+          <view>其他医疗类培训 <text> | </text> 医学升学</view>
+          <view>幼妇课堂</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/huanjing.png"></image>
+          <view class="logo_img_text">建筑工程</view>
+        </view>
+        <view class="neirong_content">
+          <view>一级建造师 <text> | </text> 二级建造师</view>
+          <view>消防工程师 <text> | </text> 工程造价</view>
+          <view>工程施工 <text> | </text> 注册工程师</view>
+          <view>其他建工类培训</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/skill.png"></image>
+          <view class="logo_img_text">职业技能</view>
+        </view>
+        <view class="neirong_content">
+          <view>人力资源 <text> | </text> 办公软件</view>
+          <view>计算机等级考试 <text> | </text> 技工技能</view>
+          <view>心理咨询 <text> | </text> 企业培训</view>
+          <view>创业教育 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 升学 -->
+  <view class="index_contents"  style="display:{{y5}}">
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/kaoyan.png"></image>
+          <view class="logo_img_text">考研</view>
+        </view>
+        <view class="neirong_content">
+          <view>规划指导 <text> | </text> 考研英语</view>
+          <view>考研政治 <text> | </text> 考研数学 <text> | </text>  专业课</view>
+          <view>其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/university.png"></image>
+          <view class="logo_img_text">大学</view>
+        </view>
+        <view class="neirong_content">
+          <view>自考 <text> | </text> 专升本 <text> | </text> 公共课 </view>
+          <view>专业课</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/heightschool.png"></image>
+          <view class="logo_img_text">高中</view>
+        </view>
+        <view class="neirong_content">
+          <view>自考备战 <text> | </text> 高二 <text> | </text> 高一</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/juniorschool.png"></image>
+          <view class="logo_img_text">初中</view>
+        </view>
+        <view class="neirong_content">
+          <view>中考备战 <text> | </text> 初二 <text> | </text> 初一</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/school.png"></image>
+          <view class="logo_img_text">小学</view>
+        </view>
+        <view class="neirong_content">
+          <view>语文 <text> | </text> 数学 <text> | </text> 英语 <text> | </text> 其他</view>
+          <view>小升初备战</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 兴趣 -->
+  <view class="index_contents"  style="display:{{y6}}">
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/muying.png"></image>
+          <view class="logo_img_text">母婴亲子</view>
+        </view>
+        <view class="neirong_content">
+          <view>科学孕产 <text> | </text> 育儿护理</view>
+          <view>亲子启蒙 <text> | </text> 家庭教育</view>
+          <view>少儿编程 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/music.png"></image>
+          <view class="logo_img_text">音乐乐器</view>
+        </view>
+        <view class="neirong_content">
+          <view>音乐基础 <text> | </text> 唱歌发声 </view>
+          <view>乐器演奏 <text> | </text> 音乐制作 <text> | </text> 其他 </view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/art.png"></image>
+          <view class="logo_img_text">文艺修养</view>
+        </view>
+        <view class="neirong_content">
+          <view>摄影 <text> | </text> 书法 <text> | </text> 棋牌</view>
+          <view>益智休闲 <text> | </text> 传统文化</view>
+          <view>手工手艺 <text> | </text> TED公开课 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/life.png"></image>
+          <view class="logo_img_text">生活百科</view>
+        </view>
+        <view class="neirong_content">
+          <view>婚恋交友 <text> | </text> 家居家装</view>
+          <view>时尚美妆 <text> | </text> 美食烹饪</view>
+          <view>养生保健 <text> | </text> 动植育养 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/sport.png"></image>
+          <view class="logo_img_text">运动健康</view>
+        </view>
+        <view class="neirong_content">
+          <view>体育休闲 <text> | </text> 健身训练</view>
+          <view>舞蹈健美 <text> | </text> 武术格斗</view>
+          <view>电子竞技 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/touzi.png"></image>
+          <view class="logo_img_text">投资理财</view>
+        </view>
+        <view class="neirong_content">
+          <view>证券投资 <text> | </text> 期权期货</view>
+          <view>外汇衍生 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 语言 -->
+  <view class="index_contents" style="display:{{y7}}">
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/english.png"></image>
+          <view class="logo_img_text">使用英语</view>
+        </view>
+        <view class="neirong_content">
+          <view>英语口语 <text> | </text> 学术英语</view>
+          <view>新概念英语 <text> | </text> 青少年</view>
+          <view>外语翻译 <text> | </text> 词汇语法</view>
+          <view>职场英语</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/liuxue.png"></image>
+          <view class="logo_img_text">出国留学</view>
+        </view>
+        <view class="neirong_content">
+          <view>雅思 <text> | </text> 托福 <text> | </text> K12留学 </view>
+          <view>研究生留学 <text> | </text> 留学指导 </view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/46english.png"></image>
+          <view class="logo_img_text">英语四六级</view>
+        </view>
+        <view class="neirong_content">
+          <view>英语四级 <text> | </text> 英语六级</view>
+        </view>
+      </view>
+    </view>
+    <view class="index_contents_son">
+      <view class="index_contents_son_neirong">
+        <view class="logo_img">
+          <image src="images/world.png"></image>
+          <view class="logo_img_text">小语种</view>
+        </view>
+        <view class="neirong_content">
+          <view>法语 <text> | </text> 德语 <text> | </text> 西班牙语</view>
+          <view>葡萄牙语 <text> | </text> 方言 <text> | </text> 其他</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<!--pages/tabBar/classSchedule/index.wxml-->
+<view class="index">
+  <course id="cource"></course>
+</view>
